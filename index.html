@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Zapatillas</title>
+</head>
+
+<body>
+
+    <main>
+
+        <section class="card-row">
+
+            <article class="card">
+                <img src="assets/imgs/imagen2.png" alt="exposed brick wall in a hipster cafe">
+                <h3>Zapatillas Personalizadas</h3>
+                <h1>$60000</h1>
+                <p>Prueba el color de tu zapatilla y elige la cantidad a comprar</p>
+
+                <p> Elige el color: <input id="select" type="color" value="#ffffff" onchange="
+                    element = document.querySelector('#select')
+                    img = document.querySelector('img')
+                    img.style.backgroundColor = element.value"> </p>
+
+                <p>Unidades: <input id="cantidad" type="number" size="5" placeholder=" Cantidad"></p>
+                <br>
+                <button onClick="calcular()">Calcular</button>
+            </article>
+
+            <article class="card2">
+                <p>El color elegido es :</p>
+                <br>
+                <span id="dot2"></span>
+                <br>
+                <p>El total a pagar es :</p>
+                <br>
+                <p>$<span id="res">0</span></p>
+            </article>
+        </section>
+
+    </main>
+
+    <script type="text/javascript" src="assets/js/script.js"> </script>
+</body>
+
+</html>
